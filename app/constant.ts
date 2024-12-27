@@ -1,3 +1,11 @@
+// 在文件开头添加免费模型定义
+export const FREE_MODELS = [
+  "gpt-4o-mini",
+  "search-gpts",
+  "llama-3.1-8b",
+  "stable-diffusion",
+];
+
 export const OWNER = "alltobebetter";
 export const REPO = "Easyai";
 export const REPO_URL = `https://github.com/${OWNER}/${REPO}`;
