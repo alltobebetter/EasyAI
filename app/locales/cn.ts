@@ -8,13 +8,26 @@ const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
     Unauthorized: isApp
-      ? `😆 对话遇到了一些问题，不用慌:
-       \\ 1️⃣ 想要零配置开箱即用，[点击这里立刻开启对话 🚀](${SAAS_CHAT_UTM_URL})
-       \\ 2️⃣ 如果你想消耗自己的 OpenAI 资源，点击[这里](/#/settings)修改设置 ⚙️`
-      : `😆 对话遇到了一些问题，不用慌:
-       \ 1️⃣ 想要零配置开箱即用，[点击这里立刻开启对话 🚀](${SAAS_CHAT_UTM_URL})
-       \ 2️⃣ 如果你正在使用私有部署版本，点击[这里](/#/auth)输入访问秘钥 🔑
-       \ 3️⃣ 如果你想消耗自己的 OpenAI 资源，点击[这里](/#/settings)修改设置 ⚙️
+      ? `EasyAI：你的免费AI百宝箱，解锁无限可能！ 🧰✨
+
+想体验各种强大的AI模型，却不想花冤枉钱？ 💸  EasyAI，满足你对AI的所有期待！🤩
+
+我们精选**20+**领先AI模型，覆盖多种应用场景，更有海量**免费模型**等你来探索！🎉 是的，你没听错，顶级AI对话，**完全免费**！ 🆓
+
+EasyAI，功能远超**99%**市面AI站点，为你带来前所未有的AI互动体验。🤯 无论是头脑风暴、内容创作，还是学习助手，EasyAI都能成为你的得力帮手。✍️📚
+
+立即加入EasyAI，开启你的免费AI探索之旅！🚀
+👉 [输入密码来使用高级模型](/#/auth) | 💰 [充值高级模型使用权](https://afdian.com/a/suaolin) | ❓ [需要帮助](https://help.easyai.click/)`
+      : `EasyAI：你的免费AI百宝箱，解锁无限可能！ 🧰✨
+
+想体验各种强大的AI模型，却不想花冤枉钱？ 💸  EasyAI，满足你对AI的所有期待！🤩
+
+我们精选**20+**领先AI模型，覆盖多种应用场景，更有海量**免费模型**等你来探索！🎉 是的，你没听错，顶级AI对话，**完全免费**！ 🆓
+
+EasyAI，功能远超**99%**市面AI站点，为你带来前所未有的AI互动体验。🤯 无论是头脑风暴、内容创作，还是学习助手，EasyAI都能成为你的得力帮手。✍️📚
+
+立即加入EasyAI，开启你的免费AI探索之旅！🚀
+👉 [输入密码来使用高级模型](/#/auth) | 💰 [充值高级模型使用权](https://afdian.com/a/suaolin) | ❓ [需要帮助](https://help.easyai.click/)
        `,
   },
   Auth: {
@@ -598,7 +611,8 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "有什么可以帮你的吗",
+    BotHello: `EasyAI：更简单的ai使用方式
+📁 [文件传输](https://file.easyai.click/) | ❓ [需要帮助](https://help.easyai.click/)`,
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
