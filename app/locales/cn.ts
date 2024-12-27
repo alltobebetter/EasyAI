@@ -611,7 +611,7 @@ EasyAI，功能远超**99%**市面AI站点，为你带来前所未有的AI互动
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: `EasyAI：更简单的ai使用方式
+    BotHello: `EasyAI - 更简单的ai使用方式
 📁 [文件传输](https://file.easyai.click/) | ❓ [需要帮助](https://help.easyai.click/)`,
     Error: "出错了，稍后重试吧",
     Prompt: {
