@@ -1,4 +1,3 @@
-import React from "react";
 import { ServiceProvider } from "@/app/constant";
 import { ModalConfigValidator, ModelConfig } from "../store";
 
@@ -15,8 +14,10 @@ export function ModelConfigList(props: {
   updateConfig: (updater: (config: ModelConfig) => void) => void;
 }) {
   const allModels = useAllModels();
-  // 不再按供应商分组，而是直接展示所有可用模型
-  const availableModels = allModels.filter((v) => v.available);
+  const groupModels = groupBy(
+    allModels.filter((v) => v.available),
+    "provider.providerName",
+  );
   const value = `${props.modelConfig.model}@${props.modelConfig?.providerName}`;
   const compressModelValue = `${props.modelConfig.compressModel}@${props.modelConfig?.compressProviderName}`;
 
@@ -37,10 +38,14 @@ export function ModelConfigList(props: {
             });
           }}
         >
-          {availableModels.map((v, i) => (
-            <option value={`${v.name}@${v.provider?.providerName}`} key={i}>
-              {v.displayName}
-            </option>
+          {Object.keys(groupModels).map((providerName, index) => (
+            <optgroup label={providerName} key={index}>
+              {groupModels[providerName].map((v, i) => (
+                <option value={`${v.name}@${v.provider?.providerName}`} key={i}>
+                  {v.displayName}
+                </option>
+              ))}
+            </optgroup>
           ))}
         </Select>
       </ListItem>
@@ -254,11 +259,13 @@ export function ModelConfigList(props: {
             });
           }}
         >
-          {availableModels.map((v, i) => (
-            <option value={`${v.name}@${v.provider?.providerName}`} key={i}>
-              {v.displayName}
-            </option>
-          ))}
+          {allModels
+            .filter((v) => v.available)
+            .map((v, i) => (
+              <option value={`${v.name}@${v.provider?.providerName}`} key={i}>
+                {v.displayName}({v.provider?.providerName})
+              </option>
+            ))}
         </Select>
       </ListItem>
     </>
