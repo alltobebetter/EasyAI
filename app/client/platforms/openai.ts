@@ -477,7 +477,7 @@ export class ChatGPTApi implements LLMApi {
       sorted: seq++,
       provider: {
         id: "openai",
-        providerName: "EasyAI",
+        providerName: "",
         providerType: "openai",
         sorted: 1,
       },
