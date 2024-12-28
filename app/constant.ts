@@ -114,7 +114,7 @@ export const REQUEST_TIMEOUT_MS = 60000;
 export const EXPORT_MESSAGE_CLASS_NAME = "export-markdown";
 
 export enum ServiceProvider {
-  OpenAI = "EasyAI",
+  OpenAI = "OpenAI",
   Azure = "Azure",
     Google = "Google",
   Anthropic = "Anthropic",
@@ -423,7 +423,7 @@ export const DEFAULT_MODELS = [
     sorted: seq++, // Global sequence sort(index)
     provider: {
       id: "openai",
-      providerName: "EasyAI",
+      providerName: "OpenAI",
       providerType: "openai",
       sorted: 1, // 这里是固定的，确保顺序与之前内置的版本一致
     },
