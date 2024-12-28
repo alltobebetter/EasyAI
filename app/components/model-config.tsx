@@ -15,10 +15,8 @@ export function ModelConfigList(props: {
   updateConfig: (updater: (config: ModelConfig) => void) => void;
 }) {
   const allModels = useAllModels();
-  const groupModels = groupBy(
-    allModels.filter((v) => v.available),
-    "provider.providerName",
-  );
+  // 不再按供应商分组，而是直接展示所有可用模型
+  const availableModels = allModels.filter((v) => v.available);
   const value = `${props.modelConfig.model}@${props.modelConfig?.providerName}`;
   const compressModelValue = `${props.modelConfig.compressModel}@${props.modelConfig?.compressProviderName}`;
 
@@ -39,14 +37,10 @@ export function ModelConfigList(props: {
             });
           }}
         >
-          {Object.keys(groupModels).map((providerName, index) => (
-            <React.Fragment key={index}>
-              {groupModels[providerName].map((v, i) => (
-                <option value={`${v.name}@${v.provider?.providerName}`} key={i}>
-                  {v.displayName}
-                </option>
-              ))}
-            </React.Fragment>
+          {availableModels.map((v, i) => (
+            <option value={`${v.name}@${v.provider?.providerName}`} key={i}>
+              {v.displayName}
+            </option>
           ))}
         </Select>
       </ListItem>
@@ -260,13 +254,11 @@ export function ModelConfigList(props: {
             });
           }}
         >
-          {allModels
-            .filter((v) => v.available)
-            .map((v, i) => (
-              <option value={`${v.name}@${v.provider?.providerName}`} key={i}>
-                {v.displayName}
-              </option>
-            ))}
+          {availableModels.map((v, i) => (
+            <option value={`${v.name}@${v.provider?.providerName}`} key={i}>
+              {v.displayName}
+            </option>
+          ))}
         </Select>
       </ListItem>
     </>
