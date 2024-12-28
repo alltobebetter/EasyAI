@@ -38,12 +38,13 @@ export function ModelConfigList(props: {
             });
           }}
         >
-          {Object.keys(groupModels).map((providerName, index) => (
-              {groupModels[providerName].map((v, i) => (
-                <option value={`${v.name}@${v.provider?.providerName}`} key={i}>
-                  {v.displayName}
-                </option>
-              ))}
+          {Object.keys(groupModels).map((providerName, index) => 
+            groupModels[providerName].map((v, i) => (
+              <option value={`${v.name}@${v.provider?.providerName}`} key={i}>
+                {v.displayName}
+              </option>
+            ))
+          )}
           ))}
         </Select>
       </ListItem>
