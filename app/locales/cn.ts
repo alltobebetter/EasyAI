@@ -326,11 +326,11 @@ EasyAI，功能远超**99**%市面AI站点，为你带来前所未有的AI互动
 
     Access: {
       SaasStart: {
-        Title: "使用 EasyAI APP",
+        Title: "使用 EasyAI 高级版",
         Label: "合理的使用方案",
         SubTitle:
-          "由 EasyAI 官方维护, 零配置开箱即用，支持 OpenAI o1, GPT-4o, Claude-3.5 等最新大模型",
-        ChatNow: "立刻对话",
+          "由 EasyAI 官方维护, 稳定且能用到市面上的一切高级模型",
+        ChatNow: "立刻购买",
       },
       AccessCode: {
         Title: "访问密码",
