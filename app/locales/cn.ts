@@ -18,7 +18,7 @@ EasyAI，功能远超**99**%市面AI站点，为你带来前所未有的AI互动
 
 立即加入EasyAI，开启你的免费AI探索之旅！🚀
 
-👉 [输入密码来使用高级模型](/#/auth) | 💰 [充值高级模型使用权](https://afdian.com/a/suaolin) | ❓ [需要帮助](https://help.easyai.click/)`
+👉 [输入密码来使用高级模型](/#/auth) | 💰 [充值高级模型使用权](https://afdian.com/a/suaolin) | ❓ [需要帮助](https://help.easyai.click/) | 📁 [文件传输](https://file.easyai.click/)`
       : `EasyAI：你的免费AI百宝箱，解锁无限可能！ 🧰✨
 
 想体验各种强大的AI模型，却不想花冤枉钱？ 💸  EasyAI，满足你对AI的所有期待！🤩
@@ -29,8 +29,7 @@ EasyAI，功能远超**99**%市面AI站点，为你带来前所未有的AI互动
 
 立即加入EasyAI，开启你的免费AI探索之旅！🚀
 
-👉 [输入密码来使用高级模型](/#/auth) | 💰 [充值高级模型使用权](https://afdian.com/a/suaolin) | ❓ [需要帮助](https://help.easyai.click/)
-       `,
+👉 [输入密码来使用高级模型](/#/auth) | 💰 [充值高级模型使用权](https://afdian.com/a/suaolin) | ❓ [需要帮助](https://help.easyai.click/) | 📁 [文件传输](https://file.easyai.click/)`,
   },
   Auth: {
     Return: "返回",
