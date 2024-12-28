@@ -423,7 +423,7 @@ export const DEFAULT_MODELS = [
     sorted: seq++, // Global sequence sort(index)
     provider: {
       id: "openai",
-      providerName: "OpenAI",
+      providerName: "EasyAI",
       providerType: "openai",
       sorted: 1, // 这里是固定的，确保顺序与之前内置的版本一致
     },
@@ -445,7 +445,7 @@ export const DEFAULT_MODELS = [
     sorted: seq++,
     provider: {
       id: "google",
-      providerName: "Google",
+      providerName: "EasyAI",
       providerType: "google",
       sorted: 3,
     },
