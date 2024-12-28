@@ -44,8 +44,8 @@ const sortModelTable = (models: ReturnType<typeof collectModels>) =>
  * @returns [model, provider] tuple, if no `@` char found, provider is undefined
  */
 export function getModelProvider(modelWithProvider: string): [string, string?] {
-  const [model, provider] = modelWithProvider.split(/@(?!.*@)/);
-  return [model, provider];
+  const [model] = modelWithProvider.split(/@(?!.*@)/);
+  return [model];
 }
 
 export function collectModelTable(
